@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Agdasima:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Agdasima", sans-serif;
+  background-color: rgb(225 29 72);
+  height: 100vh;
+}
+.card-body {
+  & button {
+    border: none;
+    background: none;
+  }
+}
+
+.cards {
+  box-shadow: rgba(77, 3, 117, 0.651) 0px -23px 25px 0px inset,
+    rgba(87, 2, 167, 0.699) 0px -36px 30px 0px inset,
+    rgba(69, 3, 155, 0.514) 0px -79px 40px 0px inset,
+    rgba(68, 1, 177, 0.39) 0px 2px 1px, rgba(76, 2, 173, 0.493) 0px 4px 2px,
+    rgba(96, 1, 173, 0.39) 0px 8px 4px, rgba(95, 1, 218, 0.308) 0px 16px 8px,
+    rgba(120, 2, 255, 0.123) 0px 32px 16px;
+}
+
+.animate {
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
